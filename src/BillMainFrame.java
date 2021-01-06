@@ -30,18 +30,10 @@ public class BillMainFrame {
         tb.add(bConfig);
         tb.add(bBackup);
         tb.add(bRecover);
+        f.setLayout(new BorderLayout());
+        f.add(tb, BorderLayout.NORTH);
+        f.add(new JPanel(), BorderLayout.CENTER);
 
-
-//        tb.add(bSpend);
-//        tb.add(bRecord);
-//        tb.add(bCategory);
-//        tb.add(bReport);
-//        tb.add(bConfig);
-//        tb.add(bBackup);
-//        tb.add(bRecover);
-//        f.setLayout(new BorderLayout());
-//        f.add(tb, BorderLayout.NORTH);
-//        f.add(new JPanel(), BorderLayout.CENTER);
 
         f.setVisible(true);
 
