@@ -1,11 +1,10 @@
 package util;
 
-import com.sun.source.tree.ReturnTree;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
-import java.security.cert.TrustAnchor;
+
 
 public class GUIUtil {
 
@@ -94,6 +93,24 @@ public class GUIUtil {
             return false;
         }
         return true;
+    }
+
+    /**
+     *
+     */
+    public static void showPanel(JPanel p, double strech){
+        GUIUtil.useINF();
+        JFrame f = new JFrame();
+        f.setSize(500, 500);
+        f.setLocationRelativeTo(null);
+        CenterPanel cp = new CenterPanel(strech);
+        f.setContentPane(cp);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
+        cp.show(p);
+    }
+    public static void showPanel(JPanel p){
+        showPanel(p,0.85);
     }
 
 
