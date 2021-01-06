@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb340ad6-3b63-4dc2-8706-67a0e3f30844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/panel/SpendPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BillMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BillMainFrame.java" afterDir="false" />
-    </list>
+    <list default="true" id="bb340ad6-3b63-4dc2-8706-67a0e3f30844" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +93,7 @@
       <updated>1609899445656</updated>
       <workItem from="1609899448533" duration="1802000" />
       <workItem from="1609901873781" duration="22000" />
-      <workItem from="1609902833596" duration="4958000" />
+      <workItem from="1609902833596" duration="5201000" />
     </task>
     <servers />
   </component>
