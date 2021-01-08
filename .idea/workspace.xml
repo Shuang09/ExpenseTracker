@@ -4,7 +4,10 @@
     <list default="true" id="bb340ad6-3b63-4dc2-8706-67a0e3f30844" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/billTracking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/billTracking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/billTracking/BillMainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/billTracking/BillMainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/billTracking/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/billTracking/test/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/billTracking/util/GUIUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/billTracking/util/GUIUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/ColorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ColorUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/GUIUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/GUIUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,10 +63,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.MainPanel">
     <configuration name="BillMainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BillMainFrame" />
       <module name="billTracking" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.panel.MainPanel" />
+      <module name="billTracking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.panel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,8 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCircleProgressBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestCircleProgressBar" />
+      <module name="billTracking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainPanel" />
+        <item itemvalue="Application.TestCircleProgressBar" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.BillMainFrame" />
       </list>
@@ -112,7 +143,7 @@
       <updated>1609899445656</updated>
       <workItem from="1609899448533" duration="1802000" />
       <workItem from="1609901873781" duration="22000" />
-      <workItem from="1609902833596" duration="6940000" />
+      <workItem from="1609902833596" duration="9885000" />
     </task>
     <servers />
   </component>
@@ -120,35 +151,47 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="343" y="116" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1609971510359">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="343" y="116" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.23.1440.804@0.23.1440.804" timestamp="1609971510359" />
     <state x="523" y="344" key="Github.CreateGistDialog" timestamp="1609901533453">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="523" y="344" key="Github.CreateGistDialog/0.23.1440.804@0.23.1440.804" timestamp="1609901533453" />
-    <state width="1398" height="302" key="GridCell.Tab.0.bottom" timestamp="1609970924582">
+    <state width="1398" height="34" key="GridCell.Tab.0.bottom" timestamp="1610090619835">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1609970924582" />
+    <state width="1398" height="302" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1609976140936" />
+    <state width="1398" height="34" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1610090619835" />
     <state width="1398" height="302" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1609970781073" />
-    <state width="1398" height="302" key="GridCell.Tab.0.center" timestamp="1609970924581">
+    <state width="1398" height="34" key="GridCell.Tab.0.center" timestamp="1610090619834">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1609970924581" />
+    <state width="1398" height="302" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1609976140935" />
+    <state width="1398" height="34" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1610090619834" />
     <state width="1398" height="302" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1609970781072" />
-    <state width="1398" height="302" key="GridCell.Tab.0.left" timestamp="1609970924581">
+    <state width="1398" height="34" key="GridCell.Tab.0.left" timestamp="1610090619834">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1609970924581" />
+    <state width="1398" height="302" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1609976140935" />
+    <state width="1398" height="34" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1610090619834" />
     <state width="1398" height="302" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1609970781072" />
-    <state width="1398" height="302" key="GridCell.Tab.0.right" timestamp="1609970924582">
+    <state width="1398" height="34" key="GridCell.Tab.0.right" timestamp="1610090619835">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1609970924582" />
+    <state width="1398" height="302" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1609976140936" />
+    <state width="1398" height="34" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1610090619835" />
     <state width="1398" height="302" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1609970781073" />
-    <state x="221" y="23" key="SettingsEditor" timestamp="1609970917052">
+    <state x="221" y="23" key="SettingsEditor" timestamp="1610090578649">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="221" y="60" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1609901759630" />
-    <state x="221" y="23" key="SettingsEditor/0.23.1440.806@0.23.1440.806" timestamp="1609970917052" />
+    <state x="221" y="23" key="SettingsEditor/0.23.1440.806@0.23.1440.806" timestamp="1610090578649" />
     <state x="221" y="23" key="SettingsEditor/0.23.1440.808@0.23.1440.808" timestamp="1609970768945" />
+    <state x="385" y="191" key="run.anything.popup" timestamp="1609976002488">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="385" y="191" key="run.anything.popup/0.23.1440.804@0.23.1440.804" timestamp="1609976002488" />
   </component>
 </project>

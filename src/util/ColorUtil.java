@@ -3,10 +3,10 @@ package util;
 import java.awt.*;
 
 public class ColorUtil {
-    public static Color blueColor = Color.decode("#3399FF");
-    public static Color grayColor = Color.decode("#999999");
-    public static Color backgroundColor = Color.decode("#eeeeee");
-    public static Color warningColor = Color.decode("#FF3333");
+    public static Color blueColor = Color.decode("#30475e");
+    public static Color grayColor = Color.decode("#222831");
+    public static Color backgroundColor = Color.decode("#dddddd");
+    public static Color warningColor = Color.decode("#f05454");
 
     public static Color getByPercentage(int per) {
         if (per > 100)

@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class Test {
     public static void main(String[] args) {
-        GUIUtil.useINF();
+        GUIUtil.useLNF();
         JPanel p = new JPanel();
         p.add(new JButton("BUTTON1"));
         p.add(new JButton("BUTTON2"));

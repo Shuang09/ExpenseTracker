@@ -42,7 +42,7 @@ public class GUIUtil {
     /**
      * Set Customize Style
      */
-    public static void useINF(){
+    public static void useLNF(){
         try{
             javax.swing.UIManager.setLookAndFeel("com.birosoft.liquid.LiquidLookAndFeel");
         }catch (Exception e){
@@ -99,7 +99,7 @@ public class GUIUtil {
      *
      */
     public static void showPanel(JPanel p, double strech){
-        GUIUtil.useINF();
+        GUIUtil.useLNF();
         JFrame f = new JFrame();
         f.setSize(500, 500);
         f.setLocationRelativeTo(null);
