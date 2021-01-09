@@ -4,7 +4,8 @@ package entity;
 public class Config {
     public int id;
     public String key;
-    public String vlaue;
+    public String value;
+
 
     public void setId(int id) {
         this.id = id;
@@ -21,12 +22,11 @@ public class Config {
         return key;
     }
 
-    public void setVlaue(String vlaue) {
-        this.vlaue = vlaue;
+    public void setValue(String value) {
+        this.value = value;
     }
 
-    public String getVlaue() {
-        return vlaue;
+    public String getValue() {
+        return value;
     }
-
 }

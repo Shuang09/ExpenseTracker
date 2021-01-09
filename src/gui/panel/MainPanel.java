@@ -50,6 +50,18 @@ public class MainPanel extends JPanel {
         add(workingPanel,BorderLayout.CENTER);
 
     }
+    private void addListener() {
+        ToolBarListener listener = new ToolBarListener();
+
+        bSpend.addActionListener(listener);
+        bRecord.addActionListener(listener);
+        bCategory.addActionListener(listener);
+        bReport.addActionListener(listener);
+        bConfig.addActionListener(listener);
+        bBackup.addActionListener(listener);
+        bRecover.addActionListener(listener);
+
+    }
 
     public static void main(String[] args) {
         GUIUtil.showPanel(MainPanel.instance,1);
