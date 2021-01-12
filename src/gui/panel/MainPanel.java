@@ -1,6 +1,7 @@
 /* shuhangyan created on 2021-01-08 inside the package - gui.panel */
 package gui.panel;
 
+import gui.listener.ToolBarListener;
 import util.CenterPanel;
 import util.GUIUtil;
 
@@ -14,7 +15,7 @@ public class MainPanel extends JPanel {
     //单例模式，为的是后续的监听器访问这个容器里的组件的便利性
     public static MainPanel instance = new MainPanel();
 
-    // All the buttons in the page
+    // All the buttons in the gui.page
     public JToolBar tb = new JToolBar();
     public JButton bSpend = new JButton();
     public JButton bRecord = new JButton();
@@ -48,6 +49,8 @@ public class MainPanel extends JPanel {
         setLayout( new BorderLayout());
         add(tb, BorderLayout.NORTH);
         add(workingPanel,BorderLayout.CENTER);
+
+        addListener();
 
     }
     private void addListener() {

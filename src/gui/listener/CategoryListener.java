@@ -20,7 +20,7 @@ public class CategoryListener implements ActionListener {
         if (b == p.bAdd) {
             String name = JOptionPane.showInputDialog(null);
             if (0 == name.length()) {
-                JOptionPane.showMessageDialog(p, "分类名称不能为空");
+                JOptionPane.showMessageDialog(p, "Category Name cannot be null");
                 return;
             }
  
@@ -30,9 +30,9 @@ public class CategoryListener implements ActionListener {
         if (b == p.bEdit) {
             Category c = p.getSelectedCategory();
             int id = c.id;
-            String name = JOptionPane.showInputDialog("修改分类名称", c.name);
+            String name = JOptionPane.showInputDialog("Edit Category Name",c.name);
             if (0 == name.length()) {
-                JOptionPane.showMessageDialog(p, "分类名称不能为空");
+                JOptionPane.showMessageDialog(p, "Category Name cannot be null");
                 return;
             }
  
@@ -41,10 +41,10 @@ public class CategoryListener implements ActionListener {
         if (b == p.bDelete) {
             Category c = p.getSelectedCategory();
             if (0 != c.recordNumber) {
-                JOptionPane.showMessageDialog(p, "本分类下有消费记录存在，不能删除");
+                JOptionPane.showMessageDialog(p,"This Category has records, cannot be deleted");
                 return;
             }
-            if (JOptionPane.OK_OPTION != JOptionPane.showConfirmDialog(p, "确认要删除？"))
+            if (JOptionPane.OK_OPTION != JOptionPane.showConfirmDialog(p, "Delete confirm?"))
                 return;
  
             int id = c.id;

@@ -37,7 +37,7 @@ public class RecordPanel extends WorkingPanel {
     public JTextField tfComment = new JTextField();
     public JXDatePicker datepick = new JXDatePicker(new Date());
      
-    JButton bSubmit = new JButton("¼ÇÒ»±Ê");
+    JButton bSubmit = new JButton("Record!");
  
     public RecordPanel() {
         GUIUtil.setColor(ColorUtil.grayColor, lSpend,lCategory,lComment,lDate);
@@ -82,7 +82,7 @@ public class RecordPanel extends WorkingPanel {
     }
      
     public void resetInput(){
-        tfSpend.setText("0");
+        tfSpend.setText("");
         tfComment.setText("");
         if(0!=cbModel.cs.size())
             cbCategory.setSelectedIndex(0);

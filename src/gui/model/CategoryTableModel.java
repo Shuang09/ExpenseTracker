@@ -1,69 +1,54 @@
 /* shuhangyan created on 2021-01-08 inside the package - gui.model */
 package gui.model;
 
+import entity.Category;
+import service.CategoryService;
+
 import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
+import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CategoryTableModel implements TableModel {
-    String [] columnNames = new String[] {"Category Name", "Expense Numbers"};
-    List<String> cs = new ArrayList<>();
+public class CategoryTableModel extends AbstractTableModel {
+    String [] columnNames = new String[] {"Category Name", "Expense Times"};
 
-    public CategoryTableModel(){
-        cs.add("Meals & Entertainment Expenses");
-        cs.add("Travel Expenses");
-        cs.add("Rent, Utilities & Phone");
-    }
+    public List<Category> cs = new CategoryService().list();
+
 
     @Override
     public int getRowCount() {
-        return 0;
+
+        return cs.size();
     }
 
     @Override
     public int getColumnCount() {
-        return 0;
+        return columnNames.length;
     }
 
     @Override
     public String getColumnName(int columnIndex) {
-        return null;
+        return columnNames[columnIndex];
     }
 
-    @Override
-    public Class<?> getColumnClass(int columnIndex) {
-        return null;
-    }
 
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
         return false;
     }
 
+    // 先通过cs.get(rowIndex)获取行对应的Category对象
+    // 然后根据columnIndex返回对应的属性
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        if(columnIndex == 0){
-            return cs.get(rowIndex);
-        }
-        if(columnIndex == 1){
-            return 0;
-        }
+        Category h = cs.get(rowIndex);
+        if (0 == columnIndex)
+            return h.name;
+        if (1 == columnIndex)
+            return h.recordNumber;
+
         return null;
     }
 
-    @Override
-    public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
 
-    }
-
-    @Override
-    public void addTableModelListener(TableModelListener l) {
-
-    }
-
-    @Override
-    public void removeTableModelListener(TableModelListener l) {
-
-    }
 }

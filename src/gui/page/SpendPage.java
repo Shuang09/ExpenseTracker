@@ -1,5 +1,5 @@
-/* shuhangyan created on 2021-01-09 inside the package - page */
-package page;
+/* shuhangyan created on 2021-01-09 inside the package - gui.page */
+package gui.page;
 
 public class SpendPage {
     public String monthSpend;
@@ -13,21 +13,21 @@ public class SpendPage {
 
     public SpendPage(int monthSpend, int todaySpend, int avgSpendPerDay, int monthAvailable, int dayAvgAvailable,
                      int monthLeftDay, int usagePercentage) {
-        this.monthSpend = "£¤" + monthSpend;
-        this.todaySpend = "£¤" + todaySpend;
-        this.avgSpendPerDay = "£¤" + avgSpendPerDay;
+        this.monthSpend = "$" + monthSpend;
+        this.todaySpend = "$" + todaySpend;
+        this.avgSpendPerDay = "$" + avgSpendPerDay;
         if (monthAvailable < 0)
             isOverSpend = true;
 
         if (!isOverSpend) {
-            this.monthAvailable = "£¤" + monthAvailable;
-            this.dayAvgAvailable = "£¤" + dayAvgAvailable;
+            this.monthAvailable = "$" + monthAvailable;
+            this.dayAvgAvailable = "$" + dayAvgAvailable;
         } else {
-            this.monthAvailable = "³¬Ö§" + (0 - monthAvailable);
-            this.dayAvgAvailable = "£¤0";
+            this.monthAvailable = "Overspend" + (0 - monthAvailable);
+            this.dayAvgAvailable = "$";
         }
 
-        this.monthLeftDay = monthLeftDay + "Ìì";
+        this.monthLeftDay = monthLeftDay + "Day";
         this.usagePercentage = usagePercentage;
     }
 

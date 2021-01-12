@@ -1,5 +1,5 @@
 /* shuhangyan created on 2021-01-08 inside the package - gui.listner */
-package gui.listner;
+package gui.listener;
 
 import gui.panel.*;
 

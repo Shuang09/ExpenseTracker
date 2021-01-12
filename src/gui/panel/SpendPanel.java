@@ -1,6 +1,10 @@
 package gui.panel;
 
+import static util.GUIUtil.setColor;
+import static util.GUIUtil.showPanel;
+
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -8,33 +12,37 @@ import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import page.SpendPage;
+import gui.page.SpendPage;
+import service.SpendService;
 import util.CircleProgressBar;
 import util.ColorUtil;
 import util.GUIUtil;
 
 
-import static util.GUIUtil.setColor;
 
-public class SpendPanel {
+public class SpendPanel extends WorkingPanel {
+    static{
+        GUIUtil.useLNF();
+    }
 
     public static SpendPanel instance = new SpendPanel();
 
-    JLabel lMonthSpend = new JLabel("Month Expense");
-    JLabel lTodaySpend = new JLabel("Today Expense");
-    JLabel lAvgSpendPerDay = new JLabel("Average Daily Expense");
-    JLabel lMonthLeft = new JLabel("Remainning for the month");
-    JLabel lDayAvgAvailable = new JLabel("Remainning for per day");
-    JLabel lMonthLeftDay = new JLabel("Till the end of the month");
+    public JLabel lMonthSpend = new JLabel("Month Expense");
+    public JLabel lTodaySpend = new JLabel("Today Expense");
+    public JLabel lAvgSpendPerDay = new JLabel("Average Daily Expense");
+    public JLabel lMonthLeft = new JLabel("Remainning for the month");
+    public JLabel lDayAvgAvailable = new JLabel("Remainning for per day");
+    public JLabel lMonthLeftDay = new JLabel("Till the end of the month");
 
-    JLabel vMonthSpend = new JLabel("$2300");
-    JLabel vTodaySpend = new JLabel("$25");
-    JLabel vAvgSpendPerDay = new JLabel("$120");
-    JLabel vMonthAvailable = new JLabel("$2084");
-    JLabel vDayAvgAvailable = new JLabel("$389");
-    JLabel vMonthLeftDay = new JLabel("15 days");
+    public JLabel vMonthSpend = new JLabel("$2300");
+    public JLabel vTodaySpend = new JLabel("$25");
+    public JLabel vAvgSpendPerDay = new JLabel("$120");
+    public JLabel vMonthAvailable = new JLabel("$2084");
+    public JLabel vDayAvgAvailable = new JLabel("$389");
+    public JLabel vMonthLeftDay = new JLabel("15 days");
 
     CircleProgressBar bar;
+
 
     public SpendPanel() {
         this.setLayout(new BorderLayout());

@@ -4,7 +4,7 @@ package entity;
 public class Category {
     public int id;
     public String name;
-    public int RecordNumber;
+    public int recordNumber;
 
     public void setId(int id) {
         this.id = id;
@@ -23,10 +23,10 @@ public class Category {
     }
 
     public void setRecordNumber(int recordNumber) {
-        RecordNumber = recordNumber;
+        this.recordNumber = recordNumber;
     }
 
     public int getRecordNumber() {
-        return RecordNumber;
+        return recordNumber;
     }
 }
